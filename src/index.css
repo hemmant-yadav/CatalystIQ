@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(222, 47%, 11%);
+  --color-foreground: hsl(210, 40%, 98%);
+  --color-hero-sub: hsl(215, 20.2%, 65.1%);
+  --font-sans: 'Inter', sans-serif;
+  --font-headline: 'Inter', sans-serif;
+}
+
+:root {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --hero-sub: 215 20.2% 65.1%;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  color: hsl(var(--foreground));
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-headline {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.015em;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.heroSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--foreground) / 0.1);
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.heroSecondary:hover {
+  border-color: hsl(var(--foreground) / 0.3);
+  background: hsl(var(--foreground) / 0.05);
+}
+
+.liquid-glass {
+  background: hsl(222, 47%, 13%);
+  border: 1px solid hsl(222, 47%, 20%);
+  border-radius: 8px;
+}
+
+.liquid-glass-purple {
+  background: hsl(222, 47%, 13%);
+  border: 1px solid hsl(222, 47%, 20%);
+  border-radius: 8px;
+}

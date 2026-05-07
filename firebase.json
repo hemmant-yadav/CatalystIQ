@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "CatalystIQ",
+        "supportEmail": "yadavhemanth28@gmail.com"
+      }
+    }
+  }
+}
