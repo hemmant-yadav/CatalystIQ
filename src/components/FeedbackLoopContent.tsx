@@ -44,11 +44,6 @@ interface LogEntry {
 
 type MetricStatus = 'Exceeded' | 'Matched' | 'Underperformed'
 
-function metricStatus(actual: number, predicted: number): MetricStatus {
-  if (actual > predicted) return 'Exceeded'
-  if (actual === predicted) return 'Matched'
-  return 'Underperformed'
-}
 
 function overallStatus(e: LogEntry): MetricStatus {
   const avgP = (e.predicted.activity + e.predicted.selectivity + e.predicted.stability) / 3
